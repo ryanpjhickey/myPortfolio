@@ -6,11 +6,12 @@ import projects from './Data';
 export default function Portfolio() {
   return (
     <div>
+      <h1>Please click any of the images below to be re-directed to their respective github repositorites.</h1>
       {projects.map(project =>
         <div key={project.name}>
           <h1>{project.name}</h1>
           <p>{project.desc}</p>
-          <img src={project.imgUrl} alt={`${project.name}`} width="200" />
+          <a href={project.link}><img src={project.imgUrl} alt={`${project.name}`} width="200" /></a>
           <hr />
         </div>
       )
