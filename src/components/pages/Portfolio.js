@@ -5,17 +5,19 @@ import projects from './Data';
 
 export default function Portfolio() {
   return (
-    <div>
-      <h1>Please click any of the images below to be re-directed to their respective github repositorites.</h1>
-      {projects.map(project =>
-        <div key={project.name}>
-          <h1>{project.name}</h1>
-          <p>{project.desc}</p>
-          <a href={project.link}><img src={project.imgUrl} alt={`${project.name}`} width="200" /></a>
-          <hr />
-        </div>
-      )
-      }
-    </div >
+    <div class="content">
+      <div class="mywork">
+        <h1 class="about pheader">Please click any of the images below to be re-directed to their respective github repositorites.</h1>
+        {
+          projects.map(project =>
+            <div class="card2" key={project.name}>
+              <h2>{project.name}</h2>
+              <p class='moveleft'>{project.desc}</p>
+              <a href={project.link}><img class="float-right" src={project.imgUrl} alt={`${project.name}`} width="200" height="140" /></a>
+            </div>
+          )
+        }
+      </div >
+    </div>
   );
 }

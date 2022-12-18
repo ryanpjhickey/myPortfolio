@@ -5,10 +5,11 @@ import React from 'react';
 
 export default function Contact() {
 
+
   const [formState, setFormState] = React.useState('Send')
   const handler = (event) => {
     event.preventDefault()
-    setFormState('Submitting...')
+    setFormState('Submitted!')
     const { name, email, message } = event.target.elements
     let contactForm = {
       name: name.value,
@@ -16,6 +17,19 @@ export default function Contact() {
       message: message.value,
     }
     console.log(contactForm)
+    this.onChange = () => {
+      this.setState({
+        name: 'Please fill out all forms!',
+        email: 'Please fill out all forms!',
+        message: 'Please fill out all forms!',
+      })
+    }
+    const error = {}
+    if (!event.email) {
+      error.email = 'Required'
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(event.email)) {
+      error.email = 'Invalid email address'
+    }
   }
 
   return (
