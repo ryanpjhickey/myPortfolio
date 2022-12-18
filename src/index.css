@@ -1,13 +1,155 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #d9dcd6;
+}
+
+.header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+.header h1 .seo {
+  color: #d9dcd6;
+}
+
+.header div {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.header div ul li {
+  display: inline;
+  margin-left: 150px;
+  border-bottom: solid; color: black;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+.hero {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(https://cdn2.steamgriddb.com/file/sgdb-cdn/hero/cd12c5f7eafb7e784382eb8e307d4ae0.png);
+  background-size: cover;
+}
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+.content {
+  width: 100%;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.mywork {
+  border-bottom: solid; color: black;
+}
+
+.card1 {
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #2589bd;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+
+
+.card1 h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+
+.card1 img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+}
+
+
+
+.card1 p {
+  margin-bottom: 32px;
+}
+
+.card2 {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+.card2 img {
+  max-height: 200px;
+}
+
+.card2 h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.aboutp {
+  color: white;
+  font-size: 36px;
+  background-color:#0072bb;
+  margin-bottom: 20px;
+}
+
+.about {
+  border-bottom: solid; color: black;
 }
