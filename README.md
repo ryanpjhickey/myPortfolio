@@ -1,4 +1,4 @@
-# WeatherDashboard
+# React Portfolio
 
 ## Table of Contents
 
